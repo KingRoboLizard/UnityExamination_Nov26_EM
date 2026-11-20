@@ -1,3 +1,4 @@
+using Unity.Mathematics;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -71,6 +72,7 @@ public class CustomizablePlatformerMovement : MonoBehaviour
             }
             else
             {
+                animator.Play("Jump");
                 // Has jumped. Play jump sound and/or trigger jump animation etc
             }
         }
@@ -78,6 +80,7 @@ public class CustomizablePlatformerMovement : MonoBehaviour
         else if (wasGrounded == false && isGrounded == true)
         {
             jumpReleased = false;
+            animator.Play("Idle");
             // Has landed, play landing sound and trigger landing animation
         }
         
@@ -87,8 +90,17 @@ public class CustomizablePlatformerMovement : MonoBehaviour
         //---Handle horizontal velocity---
         velocity.x = moveInput.x * maxSpeed;
         
-        // Write movement animation code here. (Suggestion: send your current velocity into the Animator for both the x- and y-axis.)
-        // animator.SetFloat("HorizontalMovement", moveInput.x)
+        if (isGrounded)
+        {
+            if (math.abs(velocity.x) > 0.1f)
+            {
+                animator.Play("Run");
+            }
+            else
+            {
+                animator.Play("Idle");
+            }
+        }
         
         // Flip sprite according to direction (if a sprite renderer has been assigned)
         if (spriteRenderer)
