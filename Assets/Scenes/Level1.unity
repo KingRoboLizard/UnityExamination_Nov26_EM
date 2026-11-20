@@ -145,9 +145,10 @@ GameObject:
   - component: {fileID: 95941797}
   - component: {fileID: 95941796}
   - component: {fileID: 95941795}
+  - component: {fileID: 95941798}
   m_Layer: 0
   m_Name: Rocks
-  m_TagString: Untagged
+  m_TagString: Damageable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -299,6 +300,19 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &95941798
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 95941793}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: abf553d18f654b54afef0958c0587778, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HurtController
+  health: 1
 --- !u!1 &218588134
 GameObject:
   m_ObjectHideFlags: 0
@@ -1021,6 +1035,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2818684734627950013, guid: 16572420f82c9e04186bb8baacad4775, type: 3}
+      propertyPath: hasSword
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5918050513422240669, guid: 16572420f82c9e04186bb8baacad4775, type: 3}
       propertyPath: m_Name
       value: Player
@@ -1070,6 +1088,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 16572420f82c9e04186bb8baacad4775, type: 3}
+--- !u!114 &1190837856 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2376008591745303619, guid: 16572420f82c9e04186bb8baacad4775, type: 3}
+  m_PrefabInstance: {fileID: 1190837855}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: adf0c1f12ed50564680124109c74c090, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SceneChangeHandler
 --- !u!1 &1208337881
 GameObject:
   m_ObjectHideFlags: 0
@@ -1167,7 +1196,7 @@ MonoBehaviour:
   textBox: {fileID: 1355833049}
   nextButton: {fileID: 576022689}
   dialogue:
-  - Hello there
+  - Hello again
   - I will now send you to the next area
   onStartDialogue:
     m_PersistentCalls:
@@ -1199,7 +1228,7 @@ MonoBehaviour:
   onEndDialogue:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1190837856}
         m_TargetAssemblyTypeName: SceneChangeHandler, Assembly-CSharp
         m_MethodName: ChangeScene
         m_Mode: 5
@@ -1208,7 +1237,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: level2
+          m_StringArgument: Level2
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1228085669

@@ -27,6 +27,13 @@ public class CustomizablePlatformerMovement : MonoBehaviour
     [SerializeField] private CircleCollider2D groundCheckCollider;
     [SerializeField] private LayerMask groundLayer = ~0; // ~0 is referring to EVERY layer.
     
+    [SerializeField] private GameObject slashAttack;
+    public bool hasSword = false;
+
+    public void GetSword()
+    {
+        hasSword = true;
+    }
     // Handle input
     public bool controlEnabled { get; set; } = true; // You can edit this variable from Unity Events
     private Vector2 moveInput;
@@ -184,6 +191,18 @@ public class CustomizablePlatformerMovement : MonoBehaviour
         {
             jumpReleased = true;
             jumpInput = false;
+        }
+    }
+
+    public void OnAttack(InputAction.CallbackContext context)
+    {
+        Debug.Log("attack: " + hasSword);
+        if (context.started && controlEnabled && hasSword)
+        {
+            animator.Play("Attack");
+            GameObject attack = Instantiate(slashAttack);
+            attack.transform.position = gameObject.transform.position;
+            attack.GetComponent<SlashController>().direction = spriteRenderer.flipX ? -1 : 1;
         }
     }
 }
