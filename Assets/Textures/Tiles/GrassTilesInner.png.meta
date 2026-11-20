@@ -75,12 +75,12 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 1
+  spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 512
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spriteGenerateFallbackPhysicsShape: 1
+  spriteGenerateFallbackPhysicsShape: 0
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
@@ -157,16 +157,33 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 1530
-        width: 8
-        height: 6
+        y: 1024
+        width: 512
+        height: 512
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
-      physicsShape: []
-      tessellationDetail: -1
+      physicsShape:
+      - - {x: 256, y: 210}
+        - {x: 171, y: 210}
+        - {x: 15.231613, y: 148.00522}
+        - {x: 11, y: 154}
+        - {x: -19, y: 154}
+        - {x: -44, y: 144}
+        - {x: -44, y: 124.43144}
+        - {x: -128, y: 91}
+        - {x: -109, y: 63}
+        - {x: -87, y: 39}
+        - {x: -91, y: 43}
+        - {x: -101, y: 48}
+        - {x: -150, y: 22}
+        - {x: -197, y: -172}
+        - {x: -197, y: -202}
+        - {x: -185, y: -256}
+        - {x: 256, y: -256}
+      tessellationDetail: 0
       bones: []
       spriteID: ab8541d2a7a8c0e40800000000000000
       internalID: 5624022292025858234
@@ -178,17 +195,54 @@ TextureImporter:
       name: GrassTilesInner_1
       rect:
         serializedVersion: 2
-        x: 35
-        y: 79
-        width: 1457
-        height: 1457
+        x: 512
+        y: 1024
+        width: 512
+        height: 512
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
-      physicsShape: []
-      tessellationDetail: -1
+      physicsShape:
+      - - {x: 256, y: 212}
+        - {x: 212, y: 222}
+        - {x: -146, y: 222}
+        - {x: -256, y: 216}
+        - {x: -256, y: -256}
+        - {x: 256, y: -256}
+      - - {x: 102, y: 162}
+        - {x: 97, y: 163}
+        - {x: 95, y: 165}
+        - {x: 90, y: 168}
+        - {x: 90, y: 171}
+        - {x: 89, y: 172}
+        - {x: 91, y: 174}
+        - {x: 95, y: 176}
+        - {x: 99, y: 176}
+        - {x: 102, y: 178}
+        - {x: 109, y: 178}
+        - {x: 110, y: 174}
+        - {x: 112, y: 172}
+        - {x: 113, y: 172}
+        - {x: 107, y: 162}
+        - {x: 103, y: 161}
+      - - {x: -213, y: 115}
+        - {x: -217, y: 117}
+        - {x: -220, y: 121}
+        - {x: -220, y: 126}
+        - {x: -218, y: 128}
+        - {x: -213, y: 134}
+        - {x: -209, y: 134}
+        - {x: -208, y: 135}
+        - {x: -201, y: 129}
+        - {x: -199, y: 128}
+        - {x: -196, y: 126}
+        - {x: -191, y: 120}
+        - {x: -196, y: 115}
+        - {x: -205, y: 116}
+        - {x: -208, y: 114}
+      tessellationDetail: 0
       bones: []
       spriteID: 99eea7fbcbd65d300800000000000000
       internalID: 276247609586937497
@@ -200,17 +254,28 @@ TextureImporter:
       name: GrassTilesInner_2
       rect:
         serializedVersion: 2
-        x: 819
-        y: 1512
-        width: 14
-        height: 10
+        x: 1024
+        y: 1024
+        width: 512
+        height: 512
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
-      physicsShape: []
-      tessellationDetail: -1
+      physicsShape:
+      - - {x: 180, y: -241}
+        - {x: 182, y: -224}
+        - {x: 182, y: -204}
+        - {x: 170, y: -174}
+        - {x: 166, y: -169}
+        - {x: 182, y: -134}
+        - {x: 182, y: 78}
+        - {x: -35, y: 211}
+        - {x: -256, y: 211}
+        - {x: -256, y: -256}
+        - {x: 178, y: -256}
+      tessellationDetail: 0
       bones: []
       spriteID: ed37087b3e769f030800000000000000
       internalID: 3528966010755380190
@@ -222,17 +287,23 @@ TextureImporter:
       name: GrassTilesInner_3
       rect:
         serializedVersion: 2
-        x: 631
-        y: 1497
-        width: 10
-        height: 10
+        x: 0
+        y: 512
+        width: 512
+        height: 512
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
-      physicsShape: []
-      tessellationDetail: -1
+      physicsShape:
+      - - {x: 256, y: 256}
+        - {x: -192, y: 256}
+        - {x: -218, y: 232}
+        - {x: -218, y: -237}
+        - {x: -180, y: -256}
+        - {x: 256, y: -256}
+      tessellationDetail: 0
       bones: []
       spriteID: fafcf5ebe3868d700800000000000000
       internalID: 565316371926208431
@@ -244,17 +315,21 @@ TextureImporter:
       name: GrassTilesInner_4
       rect:
         serializedVersion: 2
-        x: 6
-        y: 1019
-        width: 20
-        height: 20
+        x: 512
+        y: 512
+        width: 512
+        height: 512
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
-      physicsShape: []
-      tessellationDetail: -1
+      physicsShape:
+      - - {x: 256, y: 256}
+        - {x: -256, y: 256}
+        - {x: -256, y: -256}
+        - {x: 256, y: -256}
+      tessellationDetail: 0
       bones: []
       spriteID: 3de03024936f4d870800000000000000
       internalID: 8706854705395076819
@@ -266,17 +341,23 @@ TextureImporter:
       name: GrassTilesInner_5
       rect:
         serializedVersion: 2
-        x: 32
-        y: 666
-        width: 6
-        height: 7
+        x: 1024
+        y: 512
+        width: 512
+        height: 512
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
-      physicsShape: []
-      tessellationDetail: -1
+      physicsShape:
+      - - {x: 209, y: -225}
+        - {x: 209, y: 243}
+        - {x: 178, y: 256}
+        - {x: -256, y: 256}
+        - {x: -256, y: -256}
+        - {x: 178, y: -256}
+      tessellationDetail: 0
       bones: []
       spriteID: 584076ba91a0bda10800000000000000
       internalID: 1935151570251875461
@@ -289,16 +370,23 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 507
-        width: 26
-        height: 36
+        y: 0
+        width: 512
+        height: 512
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
-      physicsShape: []
-      tessellationDetail: -1
+      physicsShape:
+      - - {x: 256, y: -141}
+        - {x: 256, y: 256}
+        - {x: -192, y: 256}
+        - {x: -218, y: 232}
+        - {x: -218, y: -89}
+        - {x: -88, y: -171}
+        - {x: 210, y: -171}
+      tessellationDetail: 0
       bones: []
       spriteID: cc8687fcf006cadb0800000000000000
       internalID: -4779339483525388084
@@ -310,17 +398,38 @@ TextureImporter:
       name: GrassTilesInner_7
       rect:
         serializedVersion: 2
-        x: 638
-        y: 62
-        width: 35
-        height: 35
+        x: 512
+        y: 0
+        width: 512
+        height: 512
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
-      physicsShape: []
-      tessellationDetail: -1
+      physicsShape:
+      - - {x: 160, y: -192}
+        - {x: 160, y: -177}
+        - {x: 154.95561, y: -165.65012}
+        - {x: 250, y: -149}
+        - {x: 256, y: -126}
+        - {x: 256, y: 256}
+        - {x: -256, y: 256}
+        - {x: -256, y: -131}
+        - {x: -229, y: -145}
+        - {x: -161, y: -168}
+        - {x: -125, y: -171.6}
+        - {x: -125, y: -181}
+        - {x: -120, y: -189}
+        - {x: -107, y: -189}
+        - {x: -98, y: -180}
+        - {x: -98, y: -173}
+        - {x: 113, y: -173}
+        - {x: 124, y: -171.073}
+        - {x: 124, y: -181}
+        - {x: 132, y: -195}
+        - {x: 150, y: -195}
+      tessellationDetail: 0
       bones: []
       spriteID: 1c26ef427272fd430800000000000000
       internalID: 3809806858856587969
@@ -332,42 +441,25 @@ TextureImporter:
       name: GrassTilesInner_8
       rect:
         serializedVersion: 2
-        x: 888
-        y: 57
-        width: 43
-        height: 43
+        x: 1024
+        y: 0
+        width: 512
+        height: 512
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
-      physicsShape: []
-      tessellationDetail: -1
+      physicsShape:
+      - - {x: 178, y: -104}
+        - {x: 178, y: 256}
+        - {x: -256, y: 256}
+        - {x: -256, y: -161}
+        - {x: 30, y: -161}
+      tessellationDetail: 0
       bones: []
       spriteID: 0b2a1f3cb9534c780800000000000000
       internalID: -8663740840030395728
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GrassTilesInner_9
-      rect:
-        serializedVersion: 2
-        x: 1023
-        y: 0
-        width: 61
-        height: 44
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 61a3d83de6613ed70800000000000000
-      internalID: 9071118739705772566
       vertices: []
       indices: 
       edges: []
@@ -376,7 +468,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: e0e92e2dc2c657349bd15bd3e26a9e88
     internalID: 0
     vertices: []
     indices: 
@@ -384,7 +476,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":3.0,"y":3.0},"gridSpriteSize":{"x":512.0,"y":512.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       GrassTilesInner_0: 5624022292025858234
       GrassTilesInner_1: 276247609586937497
@@ -395,7 +489,6 @@ TextureImporter:
       GrassTilesInner_6: -4779339483525388084
       GrassTilesInner_7: 3809806858856587969
       GrassTilesInner_8: -8663740840030395728
-      GrassTilesInner_9: 9071118739705772566
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
